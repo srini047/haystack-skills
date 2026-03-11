@@ -6,113 +6,7 @@ and pass outputs to the next component in the pipeline.
 
 ---
 
-# 1. Document Stores
-
-Document stores hold indexed documents and embeddings.
-
-Common options:
-
-- InMemoryDocumentStore
-- ChromaDocumentStore
-- WeaviateDocumentStore
-- ElasticsearchDocumentStore
-- PineconeDocumentStore
-- QdrantDocumentStore
-
-Use cases:
-
-- Store indexed documents
-- Support BM25 or vector search
-- Provide metadata filtering
-
----
-
-# 2. Retrievers
-
-Retrievers search the document store and return relevant documents.
-
-## Sparse Retrieval
-
-Keyword-based retrieval methods.
-
-Examples:
-
-- InMemoryBM25Retriever
-- ElasticsearchBM25Retriever
-
-## Dense Retrieval
-
-Vector-based semantic search using embeddings.
-
-Examples:
-
-- InMemoryEmbeddingRetriever
-- OpenSearchEmbeddingRetriever
-- DensePassageRetriever
-
-Use cases:
-
-- Semantic similarity search
-- Retrieval in RAG systems
-
----
-
-# 3. Embedders
-
-Embedders convert text or documents into vector embeddings.
-
-Two types exist:
-
-### Document Embedders
-
-Used during indexing.
-
-Examples:
-
-- SentenceTransformersDocumentEmbedder
-- OpenAIDocumentEmbedder
-- CohereDocumentEmbedder
-
-### Text Embedders
-
-Used during query time.
-
-Examples:
-
-- SentenceTransformersTextEmbedder
-- OpenAITextEmbedder
-- VoyageTextEmbedder
-
-Note:
-The embedding model used for documents and queries must match.
-
----
-
-# 4. Prompt Builders
-
-Prompt builders construct prompts for LLMs using templates.
-
-Examples:
-
-- PromptBuilder
-- ChatPromptBuilder
-
-Usage:
-
-- Insert retrieved documents into prompts
-- Format system and user instructions
-
-Example template:
-```
-# Haystack Components Reference
-
-This document lists the Haystack components used or potentially used in this project.
-Haystack pipelines are built by connecting modular components that process data
-and pass outputs to the next component in the pipeline.
-
----
-
-# 1. Document Stores
+## 1. Document Stores
 
 Document stores hold indexed documents and embeddings.
 
@@ -131,11 +25,11 @@ Use cases:
 
 ---
 
-# 2. Retrievers
+## 2. Retrievers
 
 Retrievers search the document store and return relevant documents.
 
-## Sparse Retrieval
+### Sparse Retrieval
 
 Keyword-based retrieval methods.
 
@@ -144,7 +38,7 @@ Examples:
 - InMemoryBM25Retriever
 - ElasticsearchBM25Retriever
 
-## Dense Retrieval
+### Dense Retrieval
 
 Vector-based semantic search using embeddings.
 
@@ -154,7 +48,7 @@ Examples:
 - ElasticsearchEmbeddingRetriever
 - WeaviateEmbeddingRetriever
 
-## Hybrid Retrieval
+### Hybrid Retrieval
 
 Examples:
 
@@ -170,7 +64,7 @@ Use cases:
 
 ---
 
-# 3. Embedders
+## 3. Embedders
 
 Embedders convert text into vector embeddings.
 
@@ -192,7 +86,7 @@ Examples:
 
 ---
 
-# 4. Prompt Builders
+## 4. Prompt Builders
 
 Prompt builders construct prompts for LLMs using templates.
 
@@ -220,7 +114,7 @@ Note: For more templates refer `references/prompts.md`
 
 ---
 
-# 5. Generators (LLMs)
+## 5. Generators (LLMs)
 
 Generators produce text responses using large language models.
 
@@ -239,7 +133,7 @@ Use cases:
 
 ---
 
-# 6. Joiners
+## 6. Joiners
 
 Joiners merge outputs from multiple retrievers.
 
@@ -255,7 +149,7 @@ Use cases:
 
 ---
 
-# 7. Rankers
+## 7. Rankers
 
 Rankers reorder retrieved documents based on relevance.
 
@@ -272,7 +166,7 @@ Use cases:
 
 ---
 
-# 8. Preprocessors
+## 8. Preprocessors
 
 Preprocessors prepare documents before indexing.
 
@@ -290,7 +184,7 @@ Use cases:
 
 ---
 
-# 9. Converters
+## 9. Converters
 
 Converters transform files into Haystack Document objects.
 
@@ -309,7 +203,7 @@ Use cases:
 
 ---
 
-# 10. Writers
+## 10. Writers
 
 Writers store documents into document stores.
 
@@ -324,7 +218,7 @@ Use cases:
 
 ---
 
-# 11. Routers
+## 11. Routers
 
 Routers control pipeline flow based on conditions.
 
