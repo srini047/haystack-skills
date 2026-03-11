@@ -1,10 +1,6 @@
 ---
-name: haystack-ai
+name: haystack
 description: Build retrieval-augmented generation (RAG) systems and advanced search applications using the Haystack framework. Use when creating document pipelines, implementing semantic search, integrating LLMs with retrieval (RAG), building QA systems, or managing document stores and indexing.
-license: MIT
-metadata:
-  author: Sriniketh J
-  version: "1.0"
 ---
 
 # Haystack AI

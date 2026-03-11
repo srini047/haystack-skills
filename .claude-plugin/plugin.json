@@ -1,0 +1,20 @@
+{
+  "name": "haystack-skills",
+  "author": {
+    "name": "Sriniketh J",
+    "url": "https://github.com/srini047"
+  },
+  "license": "MIT",
+  "metadata": {
+    "description": "Agent Skills for Deepset AI - Haystack Ecosystem",
+    "version": "1.0.1"
+  },
+  "homepage": "https://github.com/srini047/haystack-skills",
+  "repository": "https://github.com/srini047/haystack-skills",
+  "keywords": [
+    "haystack",
+    "agent",
+    "rag",
+    "llm"
+  ]
+}
