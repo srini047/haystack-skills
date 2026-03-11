@@ -19,7 +19,7 @@ This repository adheres to the [AgentSkills](https://agentskills.io/home) specif
 This repository includes the following skills:
 
 | Name | Description | Installation |
-| --- | --- |
+| --- | --- | --- |
 | [haystack](skills/haystack/SKILL.md) | Contains core haystack skill | `npx skills add srini047/haystack-skills@haystack` |
 
 Note: `npx skills add <owner/repo@skill>` is standard command for installing skills from any public repository. 
