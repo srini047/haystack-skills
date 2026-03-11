@@ -3,7 +3,7 @@ name: haystack
 description: Build retrieval-augmented generation (RAG) systems and advanced search applications using the Haystack framework. Use when creating document pipelines, implementing semantic search, integrating LLMs with retrieval (RAG), building QA systems, or managing document stores and indexing.
 ---
 
-# Haystack AI
+# Haystack
 
 This skill is for building intelligent search and retrieval systems with Haystack, combining document processing, semantic search, and LLM integration.
 

@@ -1,54 +1,69 @@
 # Haystack AI Skills
 
-A collection of AI agent skills for building retrieval-augmented generation (RAG) systems and advanced search applications using the Haystack framework.
+A curated collection of AI agent skills designed for building retrieval-augmented generation (RAG) systems and advanced search applications with the Haystack framework.
 
 ## What are Skills?
 
-Skills are structured definitions that enable AI agents to perform specific tasks. Each skill contains:
-- **Instructions**: Detailed guidance on when and how to use the skill
+Skills are structured definitions that empower AI agents to execute specific tasks. Each skill includes:
+- **Instructions**: Comprehensive guidance on when and how to apply the skill
 - **Examples**: Reference implementations and usage patterns
 - **Scripts**: Reusable code components for common operations
 
-This repository follows the [AgentSkills](https://agentskills.io/home) specification for skill definitions and structure.
+This repository adheres to the [AgentSkills](https://agentskills.io/home) specification for skill definitions and organization.
+
+> [!TIP]
+> If your agent lacks skill support, you can use [`agents/AGENTS.md`](agents/AGENTS.md) as an alternative.
+
 
 ## Available Skills
+This repository includes the following skills:
+| Name | Description |
+| --- | --- |
+| [haystack](skills/haystack/SKILL.md) | Contains core haystack skill |
 
-### Haystack AI Core
-- **Directory**: `skills/haystack-ai/`
-- **Purpose**: Build RAG systems, semantic search, and document processing pipelines
+### Haystack
+- **Directory**: `skills/haystack/`
+- **Purpose**: Construct RAG systems, implement semantic search, and develop document processing pipelines
 
-### Haystack Core Integrations
-- **Directory**: `skills/haystack-core-integrations/`
-- **Purpose**: Integration patterns and connectors for extending Haystack with external systems, databases, APIs, and third-party services
+## Installation
 
-## Getting Started
+These Haystack skills are compatible with Claude Code, Gemini CLI, and Cursor.
 
-### Prerequisites
-- Python 3.10
-- Haystack 2.0+
-- Required dependencies (see individual skill documentation)
+### Claude Code
 
+1. Register this repository as a plugin marketplace:
+   ```
+   /plugin marketplace add haystack/skills
+   ```
 
-### Usage
-1. Choose the appropriate skill for your use case
-2. Review the skill documentation in the respective `SKILL.md` file
-3. Use the provided examples and scripts as starting points
-4. Adapt the code to your specific requirements
+2. Install a specific skill:
+   ```
+   /plugin install <skill-name>@haystack/skills
+   ```
 
+   Example:
+   ```
+   /plugin install haystack@haystack/skills
+   ```
 
-## Contributing
+### Gemini CLI
 
-We welcome contributions! Please see our contributing guidelines (coming soon) for details on:
-- Adding new skills
-- Improving existing examples
-- Reporting issues
-- Submitting pull requests
+1. This repository includes a `gemini-extension.json` file for seamless Gemini CLI integration.
 
-## License
+2. Install locally:
+   ```
+   gemini extensions install . --consent
+   ```
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+   Or install directly from GitHub:
+   ```
+   gemini extensions install https://github.com/srini047/haystack-skills.git --consent
+   ```
 
-## Related Resources
+### Cursor
 
-- [Haystack AI](https://haystack.deepset.ai/)
-- [AgentSkills Specification](https://agentskills.io/home)
+This repository provides Cursor plugin manifests:
+
+- `.cursor-plugin/plugin.json`
+
+Install via the Cursor plugin interface using either the repository URL or a local checkout.
