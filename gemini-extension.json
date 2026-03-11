@@ -1,0 +1,6 @@
+{
+  "name": "haystack-skills",
+  "description": "Provides access to the Haystack skills",
+  "version": "1.0.0",
+  "contextFileName": "agents/AGENTS.md"
+}
